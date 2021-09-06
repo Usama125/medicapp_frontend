@@ -74,7 +74,7 @@
                <div class="col-md-12">
                   <ul class="nav justify-content-center">
                      <li class="nav-item">
-                        <a class="nav-link" href="#">Hospital Profile</a>
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#hospitalProfile">Hospital Profile</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link active" href="#">Account</a>
@@ -151,41 +151,49 @@
          </section>
       </div>
       <!-- Add Doctor -->
-      <div class="modal fade" id="addNurse" tabindex="-1" aria-labelledby="addNurseLabel" aria-hidden="true">
+      <div class="modal fade" id="hospitalProfile" tabindex="-1" aria-labelledby="hospitalProfileLabel" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                <div class="modal-body">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span class="icon-close"></span>
                   </button>
-                  <h4 class="text-center">Add Doctor</h4>
+                  <h4 class="text-center">Update Hospital Profile</h4>
                   <form>
                      <div class="row">
                         <div class="col-md-6">
                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="First Name">
+                             <select class="form-control">
+                                 <option>Opening Time</option>
+                               </select>
                            </div>
                         </div>
                         <div class="col-md-6">
                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Last Name">
+                              <select class="form-control">
+                                 <option>Closing Time</option>
+                               </select>  
                            </div>
                         </div>
                      </div>
                      <div class="row">
                         <div class="col-md-6">
                            <div class="form-group">
-                              <input type="email" class="form-control" placeholder="Email">
+                               <select class="form-control">
+                                 <option>Services</option>
+                               </select>  
                            </div>
                         </div>
                         <div class="col-md-6">
                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Mobile">
+                               <select class="form-control">
+                                 <option>PCR/DPI</option>
+                               </select>  
                            </div>
                         </div>
                      </div>
                      <div class="form-group text-center mb-0">
-                        <button type="submit" class="btn btn-primary">Confirm</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
                      </div>
                   </form>
                </div>
