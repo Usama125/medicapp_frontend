@@ -29,19 +29,19 @@
             </form>
             <ul class="sidebar-nav">
                <li class="active">
-                  <a href="javascript:void(0"><span class="icon-dashboard"></span> Dashboard</a>
+                  <a href="index.html"><span class="icon-dashboard"></span> Dashboard</a>
                </li>
                <li>
-                  <a href="javascript:void(0"><span class="icon-stethoscope"></span> Doctors</a>
+                  <a href="doctors.html"><span class="icon-stethoscope"></span> Doctors</a>
                </li>
                <li>
-                  <a href="javascript:void(0"><span class="icon-nurse"></span> Nurse</a>
+                  <a href="nurse.html"><span class="icon-nurse"></span> Nurse</a>
                </li>
                <li>
-                  <a href="javascript:void(0"><span class="icon-laboratory"></span> Laboratory </a>
+                  <a href="laboratory.html"><span class="icon-laboratory"></span> Laboratory </a>
                </li>
                <li>
-                  <a href="javascript:void(0)"><span class="icon-patient"></span> Patient List</a>
+                  <a href="patient-list.html"><span class="icon-patient"></span> Patient List</a>
                </li>
             </ul>
          </aside>
@@ -57,9 +57,15 @@
                   </form>
                   <ul class="navbar-nav ml-auto align-items-center">
                      <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">
-                        <span class="icon-user"></span> User
-                        </a>
+                        <div class="dropdown">
+                          <a href="javascript:void(0)" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="icon-user"></span> User
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Setting</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                          </div>
+                        </div>
                      </li>
                   </ul>
                </nav>
