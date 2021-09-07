@@ -82,75 +82,106 @@
                   </ul>
                </div>
             </div>
-            <div class="row patient-profile">
-               <div class="col-md-3 col-lg-3 col-xl-2">
-                  <div class="profile-image">
-                     <img src="assets/images/patient.png" alt="patient">
-                     <a href="#"><span class="fa fa-pencil"></span></a>
+            <div class="row align-items-start add-list hospital-info">
+               <div class="col-6">
+                  <h4>Medeor Hospital</h4>
+                  <p class="rating mb-1">
+                     <i class="text-warning fa fa-star"></i>
+                     <i class="text-warning fa fa-star"></i>
+                     <i class="text-warning fa fa-star"></i>
+                     <i class="text-warning fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                  </p>
+                  <p><span class="icon-map"></span> Dubai, United Arab Emirates <a href="#">Get Direction</a></p>
+                  <h6>Open now </h6>
+               </div>
+               <div class="col-6 text-right">
+                  <a href="javascript:void(0)" data-toggle="modal" data-target="#updateHospital" class="btn btn-primary px-4">Update</a>
+               </div>
+            </div>
+            <div class="row mt-2">
+               <div class="col-md-3">
+                  <img class="img-fluid" src="assets/images/hospital.png" alt="hospital">
+               </div>
+               <div class="col-md-3">
+                  <img class="img-fluid" src="assets/images/hospital.png" alt="hospital">
+               </div>
+               <div class="col-md-3">
+                  <div class="upload-file">
+                     <span class="icon-upload"></span>
+                     <p>Upload New Image</p>
                   </div>
                </div>
-               <div class="col-md-9 col-lg-9 col-xl-8">
-                  <h4 class="mb-3">Hospital Details</h4>
-                  <form>
-                     <div class="row">
-                        <div class="col-sm-6">
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Hospital Name">
-                           </div>
-                        </div>
-                        <div class="col-sm-6">
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Trade License Number">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-sm-6">
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Location">
-                           </div>
-                        </div>
-                        <div class="col-sm-6">
-                           <div class="form-group position-relative">
-                              <input type="file" class="form-control custom-file-input" id="validatedCustomFile">
-                              <label class="custom-file-label form-control" for="validatedCustomFile">Upload Trade License</label>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-sm-12">
-                           <div class="map-bg" style="background-image: url(assets/images/map.png);">
-                              <button type="button" class="btn btn-primary px-4">UPDATE MAP LOCATION</button>
-                           </div>
-                        </div>
-                     </div>
-                     <h4 class="mb-3">Contact Details</h4>
-                     <div class="row">
-                        <div class="col-sm-6">
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Email">
-                           </div>
-                        </div>
-                        <div class="col-sm-6">
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Mobile">
-                           </div>
-                        </div>
-                        <div class="col-sm-6">
-                           <div class="form-group">
-                              <input type="Password" class="form-control" placeholder="Change Password">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="form-group text-center">
-                        <button type="submit" class="btn btn-primary mt-2">Update</button>
-                     </div>
-                  </form>
+            </div>
+            <div class="row mt-4">
+               <div class="col-md-8">
+                  <h4>About the Hospital</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
                </div>
             </div>
          </section>
       </div>
-      
+      <!-- Update Hospital -->
+      <div class="modal fade" id="updateHospital" tabindex="-1" aria-labelledby="updateHospitalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span class="icon-close"></span>
+                  </button>
+                  <h4 class="text-center">Update Hospital Profile</h4>
+                  <form>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <select class="form-control">
+                                 <option>Opening Time</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <select class="form-control">
+                                 <option>Closing Time</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <select class="form-control">
+                                 <option>Services</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <select class="form-control">
+                                 <option>PCR/DPI</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="form-group">
+                              <textarea class="form-control" rows="5" placeholder="About Hopital"></textarea>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group text-center mb-0">
+                        <button type="submit" class="btn btn-primary">Update</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="assets/js/jquery-3.5.1.js"></script>
       <script src="assets/js/popper.min.js"></script>

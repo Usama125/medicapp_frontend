@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Favicon -->
+      <link href="assets/images/favicon.png" sizes="60x60" rel="shortcut icon" type="image/x-icon" />
+      <!-- Font Awsome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <title>MedicApp</title>
+   </head>
+   <body>
+      <div id="wrapper">
+      <!-- Sidebar -->
+      <aside id="sidebar-wrapper" class="scrollbar">
+         <a href="javascript:void(0)" class="d-lg-none" ><i id="close" class="icon-close"></i></a>
+         <div class="text-center logo">
+            <a href="javascript:void(0)">
+            <img src="assets/images/logo.png" alt="logo">
+            </a>
+         </div>
+         <form class="form-inline search-form d-lg-none">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <span class="icon-search"></span>
+         </form>
+         <ul class="sidebar-nav">
+            <li>
+               <a href="index.html"><span class="icon-dashboard"></span> Dashboard</a>
+            </li>
+            <li class="active">
+               <a href="doctors.html"><span class="icon-stethoscope"></span> Doctors</a>
+            </li>
+            <li>
+               <a href="nurse.html"><span class="icon-nurse"></span> Nurse</a>
+            </li>
+            <li>
+               <a href="laboratory.html"><span class="icon-laboratory"></span> Laboratory </a>
+            </li>
+            <li>
+               <a href="patient-list.html"><span class="icon-patient"></span> Patient List</a>
+            </li>
+         </ul>
+      </aside>
+      <!-- Main Content -->
+      <section id="content-wrapper" class="user-dashboard">
+         <!-- Header -->
+         <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <a href="javascript:void(0)" class="d-lg-none" id="sidebar-toggle"><i class="fa fa-bars"></i></a>
+               <form class="form-inline search-form d-none d-lg-block">
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                  <span class="icon-search"></span>
+               </form>
+               <ul class="navbar-nav ml-auto align-items-center">
+                  <li class="nav-item">
+                     <div class="dropdown">
+                        <a href="javascript:void(0)" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-user"></span> User
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item" href="#">Setting</a>
+                           <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </nav>
+         </header>
+         <div class="row align-items-center add-list">
+            <div class="col-12">
+               <h4>Patient Profile</h4>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4">
+               <div class="card profile-detail py-3">
+                  <div class="card-body">
+                     <div class="media">
+                        <img class="avatar-lg mr-0" src="assets/images/patient.png" alt="patient">
+                        <div class="media-body">
+                           <h5 class="mt-3 mb-2">Anthony Miles</h5>
+                           <h6>Age: 36</h6>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card patient-detail">
+                  <div class="card-body">
+                     <h5>Information:</h5>
+                     <ul>
+                        <li>
+                           <span>Gender:</span> Male
+                        </li>
+                        <li>
+                           <span>Blood Type:</span> 0+ (Positive)
+                        </li>
+                        <li>
+                           <span>Allergies:</span> Milk, Penicilin
+                        </li>
+                        <li>
+                           <span>Diseases:</span> Diabetes, Blood Disorders
+                        </li>
+                        <li>
+                           <span>Height:</span> 1.78m
+                        </li>
+                        <li>
+                           <span>Weight:</span> 65kg
+                        </li>
+                        <li>
+                           <span>Patient ID:</span> 456767
+                        </li>
+                        <li>
+                           <span>Last Visit:</span> 10 Aug 2021
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-8">
+               <div class="row heart-rate">
+                  <div class="col-sm-4 col-md-4">
+                     <div class="card">
+                        <div class="card-body">
+                           <img class="my-2" src="assets/images/heart.png" alt="heart">
+                           <p>Heart Rate</p>
+                           <h4>80bpm</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                     <div class="card">
+                        <div class="card-body">
+                           <img src="assets/images/temp.png" alt="temp">
+                           <p>Body Temperature</p>
+                           <h4>35.6 <sup>o</sup>c</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                     <div class="card">
+                        <div class="card-body">
+                           <img src="assets/images/glucose.png" alt="glucose">
+                           <p>Glucose</p>
+                           <h4>100 <span>mg/dl</span></h4>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="card">
+                        <div class="card-body">
+                           <h4>Doctors</h4>
+                           <div class="row">
+                              <div class="col-sm-4">
+                                 <div class="media">
+                                    <img class="avatar-sm" src="assets/images/doctor.png" class="ml-3" alt="doctor">
+                                    <div class="media-body">
+                                       <h5 class="mb-0">Dr. Travis Martin</h5>
+                                       <p>Dentist</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4">
+                                 <div class="media">
+                                    <img class="avatar-sm" src="assets/images/doctor.png" class="ml-3" alt="doctor">
+                                    <div class="media-body">
+                                       <h5 class="mb-0">Dr. Travis Martin</h5>
+                                       <p>Dentist</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4">
+                                 <div class="media">
+                                    <img class="avatar-sm" src="assets/images/doctor.png" class="ml-3" alt="doctor">
+                                    <div class="media-body">
+                                       <h5 class="mb-0">Dr. Travis Martin</h5>
+                                       <p>Dentist</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="card lab-results">
+                        <div class="card-body">
+                           <h4 class="mb-0">Lab Results</h4>
+                           <div class="row">
+                              <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4">
+                                 <div class="media">
+                                    <span> <img src="assets/images/lab.png" alt="lab"></span>
+                                    <div class="media-body">
+                                       <h5>Blood Test</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4">
+                                 <div class="media">
+                                    <span> <img src="assets/images/lab.png" alt="lab"></span>
+                                    <div class="media-body">
+                                       <h5>Body CT-Scan</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4">
+                                 <div class="media">
+                                    <span> <img src="assets/images/lab.png" alt="lab"></span>
+                                    <div class="media-body">
+                                       <h5>Body CT-Scan</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4">
+                                 <div class="media">
+                                    <span> <img src="assets/images/lab.png" alt="lab"></span>
+                                    <div class="media-body">
+                                       <h5>Fasting Blood Sugar</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4">
+                                 <div class="media">
+                                    <span> <img src="assets/images/lab.png" alt="lab"></span>
+                                    <div class="media-body">
+                                       <h5>CBC</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4">
+                                 <div class="media">
+                                    <span> <img src="assets/images/lab.png" alt="lab"></span>
+                                    <div class="media-body">
+                                       <h5>CBC</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4">
+                                 <div class="media">
+                                    <span> <img src="assets/images/lab.png" alt="lab"></span>
+                                    <div class="media-body">
+                                       <h5>Liver Function Test</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4">
+                                 <div class="media">
+                                    <span> <img src="assets/images/lab.png" alt="lab"></span>
+                                    <div class="media-body">
+                                       <h5>USG Abdomen Pelvis</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4">
+                                 <div class="media">
+                                    <span> <img src="assets/images/lab.png" alt="lab"></span>
+                                    <div class="media-body">
+                                       <h5>USG Abdomen Pelvis</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </section>
+      </div>
+      <!-- Add Doctor -->
+      <div class="modal fade" id="addDoctor" tabindex="-1" aria-labelledby="addDoctorLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span class="icon-close"></span>
+                  </button>
+                  <h4 class="text-center">Add Doctor</h4>
+                  <form>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <input type="text" class="form-control" placeholder="First Name">
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Last Name">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <input type="email" class="form-control" placeholder="Email">
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Mobile">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group text-center mb-0">
+                        <button type="submit" class="btn btn-primary">Confirm</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="assets/js/jquery-3.5.1.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script>
+         const $button  = document.querySelector('#sidebar-toggle');
+         const $wrapper = document.querySelector('#wrapper');
+         
+         $button.addEventListener('click', (e) => {
+          e.preventDefault();
+          $wrapper.classList.toggle('toggled');
+         });
+      </script>
+      <script>
+         $(document).ready(function(){
+          $("#close").click(function(){
+           $("#wrapper").removeClass('toggled');
+         });
+         });
+      </script>
+   </body>
+</html>
