@@ -951,6 +951,12 @@ line-height: 40px;
   color: #484848;
 }
 
+.select-user .card:hover {
+  border: 1px solid #417EBF;
+  cursor: pointer;
+}
+
+
 /* Media Query */
 
 @media (min-width: 992px) {
