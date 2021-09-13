@@ -28,8 +28,14 @@
                <span class="icon-search"></span>
             </form>
             <ul class="sidebar-nav">
+               <li>
+                  <a href="appointment.html"><span class="icon-appointment"></span> Appointments </a>
+               </li>
                <li class="active">
-                  <a href="patient-list.html"><span class="icon-patient"></span> Patient List</a>
+                  <a href="patient-list.html"><span class="icon-patient"></span> Patient List </a>
+               </li>
+               <li>
+                  <a href="lab-results.html"><span class="icon-lab"></span> Lab Results Records </a>
                </li>
             </ul>
          </aside>
@@ -59,11 +65,8 @@
                </nav>
             </header>
             <div class="row align-items-center add-list">
-               <div class="col-6">
+               <div class="col-sm-12">
                   <h4>Patient List</h4>
-               </div>
-               <div class="col-6 text-right">
-                  <a href="javascript:void(0)" data-toggle="modal" data-target="#addPatient" class="btn btn-primary px-3">+ ADD PATIENT</a>
                </div>
             </div>
             <div class="row list-block patient-list">
@@ -411,62 +414,6 @@
                </div>
             </div>
          </section>
-      </div>
-      <!-- Add Patient -->
-      <div class="modal fade" id="addPatient" tabindex="-1" aria-labelledby="addPatientLabel" aria-hidden="true">
-         <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-               <div class="modal-body">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span class="icon-close"></span>
-                  </button>
-                  <h4 class="text-center">Add Patient</h4>
-                  <form>
-                     <div class="row">
-                        <div class="col-md-6">
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="First Name">
-                           </div>
-                        </div>
-                        <div class="col-md-6">
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Last Name">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-md-6">
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Birthday">
-                           </div>
-                        </div>
-                        <div class="col-md-6">
-                           <div class="form-group">
-                              <select class="form-control">
-                                 <option>Gender</option>
-                              </select>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-md-6">
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Location">
-                           </div>
-                        </div>
-                        <div class="col-md-6">
-                           <div class="form-group">
-                              <input type="email" class="form-control" placeholder="Email">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="form-group text-center mb-0">
-                        <button type="submit" class="btn btn-primary">Confirm</button>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
       </div>
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="../assets/js/jquery-3.5.1.js"></script>

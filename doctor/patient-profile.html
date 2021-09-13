@@ -29,7 +29,13 @@
          </form>
          <ul class="sidebar-nav">
             <li class="active">
-               <a href="patient-list.html"><span class="icon-patient"></span> Patient List</a>
+               <a href="appointment.html"><span class="icon-appointment"></span> Appointments </a>
+            </li>
+            <li>
+               <a href="patient-list.html"><span class="icon-patient"></span> Patient List </a>
+            </li>
+            <li>
+               <a href="lab-results.html"><span class="icon-lab"></span> Lab Results Records </a>
             </li>
          </ul>
       </aside>
@@ -324,22 +330,24 @@
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span class="icon-close"></span>
                   </button>
-                  <h4 class="text-center">Update Vitals</h4>
+                  <h4 class="text-center">Send Result</h4>
                   <form>
                      <div class="row">
                         <div class="col-md-12">
                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Heart Rate">
+                              <select class="form-control">
+                                 <option>Choose Test</option>
+                              </select>
                            </div>
                         </div>
                         <div class="col-md-12">
                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Body Temperature">
+                              <input type="text" class="form-control" placeholder="Result">
                            </div>
                         </div>
                         <div class="col-md-12">
                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Weight">
+                              <input type="text" class="form-control" placeholder="Upload Scan Results">
                            </div>
                         </div>
                      </div>

@@ -28,7 +28,19 @@
                <span class="icon-search"></span>
             </form>
             <ul class="sidebar-nav">
+               <li>
+                  <a href="index.html"><span class="icon-dashboard"></span> Dashboard</a>
+               </li>
+               <li>
+                  <a href="doctors.html"><span class="icon-stethoscope"></span> Doctors</a>
+               </li>
                <li class="active">
+                  <a href="nurse.html"><span class="icon-nurse"></span> Nurse</a>
+               </li>
+               <li>
+                  <a href="laboratory.html"><span class="icon-laboratory"></span> Laboratory </a>
+               </li>
+               <li>
                   <a href="patient-list.html"><span class="icon-patient"></span> Patient List</a>
                </li>
             </ul>
@@ -58,9 +70,16 @@
                   </ul>
                </nav>
             </header>
-            <div class="row align-items-center add-list mb-5">
-               <div class="col-12">
-                  <h4>Account</h4>
+            <div class="row nav-tab-link">
+               <div class="col-md-12">
+                  <ul class="nav justify-content-center">
+                     <li class="nav-item">
+                        <a class="nav-link active" href="#">Insurance Profile</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Account</a>
+                     </li>
+                  </ul>
                </div>
             </div>
             <div class="row patient-profile">
@@ -71,21 +90,30 @@
                   </div>
                </div>
                <div class="col-md-9 col-lg-9 col-xl-8">
-                  <h4 class="mb-3">Nurse Details</h4>
+                  <h4 class="mb-3">Insurance Details</h4>
                   <form>
                      <div class="row">
                         <div class="col-sm-6">
                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="First Name">
+                              <input type="text" class="form-control" placeholder="Hospital Name">
                            </div>
                         </div>
                         <div class="col-sm-6">
                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Last Name">
+                              <input type="text" class="form-control" placeholder="Trade License Number">
                            </div>
                         </div>
                      </div>
-                     <h4 class="my-3">Contact Details</h4>
+                     <div class="row">
+                        <div class="col-sm-6">
+                           <div class="form-group position-relative">
+                              <input type="file" class="form-control custom-file-input" id="validatedCustomFile">
+                              <label class="custom-file-label form-control" for="validatedCustomFile">Upload Trade License</label>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <h4 class="mb-3 mt-3">Contact Details</h4>
                      <div class="row">
                         <div class="col-sm-6">
                            <div class="form-group">
@@ -111,6 +139,7 @@
             </div>
          </section>
       </div>
+      
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="../assets/js/jquery-3.5.1.js"></script>
       <script src="../assets/js/popper.min.js"></script>

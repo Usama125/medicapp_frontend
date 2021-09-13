@@ -29,7 +29,13 @@
             </form>
             <ul class="sidebar-nav">
                <li class="active">
-                  <a href="patient-list.html"><span class="icon-patient"></span> Patient List</a>
+                  <a href="appointment.html"><span class="icon-appointment"></span> Appointments </a>
+               </li>
+               <li>
+                  <a href="patient-list.html"><span class="icon-patient"></span> Patient List </a>
+               </li>
+               <li>
+                  <a href="lab-results.html"><span class="icon-lab"></span> Lab Results Records </a>
                </li>
             </ul>
          </aside>
@@ -58,58 +64,66 @@
                   </ul>
                </nav>
             </header>
-            <div class="row align-items-center add-list mb-5">
-               <div class="col-12">
-                  <h4>Account</h4>
+            <div class="row nav-tab-link">
+               <div class="col-md-12">
+                  <ul class="nav justify-content-center">
+                     <li class="nav-item">
+                        <a class="nav-link active" href="doctor-profile.html">Doctor Profile</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="patient-hospital.html">Account</a>
+                     </li>
+                  </ul>
                </div>
             </div>
-            <div class="row patient-profile">
-               <div class="col-md-3 col-lg-3 col-xl-2">
-                  <div class="profile-image">
-                     <img src="../assets/images/patient.png" alt="patient">
-                     <a href="#"><span class="fa fa-pencil"></span></a>
-                  </div>
+            <div class="row align-items-start add-list hospital-info">
+               <div class="col-12 text-right">
+                  <a href="javascript:void(0)" data-toggle="modal" data-target="#updateDoctor" class="btn btn-primary px-5">Update</a>
                </div>
-               <div class="col-md-9 col-lg-9 col-xl-8">
-                  <h4 class="mb-3">Nurse Details</h4>
+            </div>
+            <div class="row mt-4">
+               <div class="col-md-4">
+                  <img class="img-fluid" src="../assets/images/doctor-sitting-in-front.png" alt="doctor">
+               </div>
+               <div class="col-md-8">
+                  <h4 class="mb-0"><strong>Dr. Nathan Smith</strong></h4>
+                  <small>ENT</small>
+                  <p class="mt-2 mb-2"><i class="icon-hospital"></i> Medeor Hospital</p>
+                  <p>LLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <h5><strong>Speciality</strong></h5>
+                  <p class="mb-1">ENT Diagnostics</p>
+                  <p>Rhinology</p>
+                  <h5><strong>Experience</strong></h5>
+                  <p>20 Years+</p>
+               </div>
+            </div>
+         </section>
+      </div>
+      <!-- Update Hospital -->
+      <div class="modal fade" id="updateDoctor" tabindex="-1" aria-labelledby="updateDoctorLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span class="icon-close"></span>
+                  </button>
+                  <h4 class="text-center">Update Doctor’s Profile</h4>
                   <form>
                      <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-md-12">
                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="First Name">
-                           </div>
-                        </div>
-                        <div class="col-sm-6">
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Last Name">
+                              <textarea class="form-control" rows="5" placeholder="About Doctor"></textarea>
                            </div>
                         </div>
                      </div>
-                     <h4 class="my-3">Contact Details</h4>
-                     <div class="row">
-                        <div class="col-sm-6">
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Email">
-                           </div>
-                        </div>
-                        <div class="col-sm-6">
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Mobile">
-                           </div>
-                        </div>
-                        <div class="col-sm-6">
-                           <div class="form-group">
-                              <input type="Password" class="form-control" placeholder="Change Password">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="form-group text-center">
-                        <button type="submit" class="btn btn-primary mt-2">Update</button>
+                     <div class="form-group text-center mb-0">
+                        <button type="submit" class="btn btn-primary">Update</button>
                      </div>
                   </form>
                </div>
             </div>
-         </section>
+         </div>
       </div>
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="../assets/js/jquery-3.5.1.js"></script>

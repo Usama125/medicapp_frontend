@@ -29,10 +29,10 @@
             </form>
             <ul class="sidebar-nav">
                <li class="active">
-                  <a href="laboratory.html"><span class="icon-laboratory"></span> Lab Request </a>
+                  <a href="lab-request.html"><span class="icon-laboratory"></span> Lab Request </a>
                </li>
                <li>
-                  <a href="patient-list.html"><span class="icon-patient"></span>Lab Result Records</a>
+                  <a href="lab-results.html"><span class="icon-lab"></span>Lab Result Records</a>
                </li>
             </ul>
          </aside>
@@ -88,7 +88,7 @@
                            </div>
                         </div>
                         <div class="text-center mt-4">
-                           <a href="javascript:void(0)" class="btn btn-primary px-3 py-2">Send Results</a>
+                           <a href="javascript:void(0)" data-toggle="modal" data-target="#sendResults" class="btn btn-primary px-3 py-2">Send Results</a>
                         </div>
                      </div>
                      
@@ -302,40 +302,38 @@
             </div>
          </section>
       </div>
-      <!-- Add Doctor -->
-      <div class="modal fade" id="addDoctor" tabindex="-1" aria-labelledby="addDoctorLabel" aria-hidden="true">
-         <div class="modal-dialog modal-dialog-centered modal-lg">
+     
+
+          <!-- Update Vitals -->
+      <div class="modal fade" id="sendResults" tabindex="-1" aria-labelledby="sendResultsLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                <div class="modal-body">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span class="icon-close"></span>
                   </button>
-                  <h4 class="text-center">Add Doctor</h4>
+                  <h4 class="text-center">Send Result</h4>
                   <form>
                      <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="First Name">
+                               <select class="form-control">
+                                 <option>Choose Test</option>
+                               </select>
                            </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Last Name">
+                              <input type="text" class="form-control" placeholder="Result">
                            </div>
                         </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                            <div class="form-group">
-                              <input type="email" class="form-control" placeholder="Email">
-                           </div>
-                        </div>
-                        <div class="col-md-6">
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Mobile">
+                              <input type="text" class="form-control" placeholder="Upload Scan Results">
                            </div>
                         </div>
                      </div>
+                     
                      <div class="form-group text-center mb-0">
                         <button type="submit" class="btn btn-primary">Confirm</button>
                      </div>
@@ -344,6 +342,7 @@
             </div>
          </div>
       </div>
+      
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="../assets/js/jquery-3.5.1.js"></script>
       <script src="../assets/js/popper.min.js"></script>
