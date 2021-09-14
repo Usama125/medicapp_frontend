@@ -29,13 +29,10 @@
             </form>
             <ul class="sidebar-nav">
                <li class="active">
-                  <a href="nurse.html"><span class="icon-nurse"></span> Appointments</a>
+                  <a href="javascript:void(0)"><span class="icon-hospital"></span> Branch </a>
                </li>
                <li>
-                  <a href="patient-list.html"><span class="icon-patient"></span> Patient List</a>
-               </li>
-                <li>
-                  <a href="lab-reuslts.html"><span class="icon-laboratory"></span> Lab Results Records </a>
+                  <a href="javascript:void(0)"><span class="icon-qr-code"></span> Scan QR Prescription </a>
                </li>
             </ul>
          </aside>
@@ -64,46 +61,55 @@
                   </ul>
                </nav>
             </header>
-            
             <div class="row align-items-start add-list hospital-info">
                <div class="col-12 text-right">
                   <a href="javascript:void(0)" data-toggle="modal" data-target="#editInsurance" class="btn btn-primary px-4">Edit</a>
                </div>
             </div>
-              
-              <div class="row align-items-center mt-4">
-               <div class="col-md-5">
-                  <img class="img-fluid" src="../assets/images/banner.png" alt="banner">
+            <div class="row align-items-center mt-4">
+               <div class="col-12">
+                  <h4>Banner</h4>
                </div>
-               <div class="col-md-3">
-                     <h4>Lorem Ipsum 
-Dolor</h4>
-<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </small>
-
+               <div class="col-sm-6 col-md-5 col-xl-5">
+                  <img class="img-fluid mb-3" src="../assets/images/banner.png" alt="banner">
+                  <a class="edit-banner" href="#"><span class="fa fa-pencil"></span></a>
+               </div>
+               <div class="col-sm-6 col-md-7 col-xl-3">
+                  <h3><strong>Lorem Ipsum 
+                     Dolor</strong>
+                  </h3>
+                  <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </small>
                </div>
             </div>
-
-            <div class="row align-items-center mt-4">
-               <div class="col-md-4">
-                  <img class="img-fluid" src="../assets/images/main-cover.png" alt="cover">
+            <div class="row align-items-center main-cover mt-4">
+               <div class="col-12">
+                  <h4>Main Cover</h4>
                </div>
-               <div class="col-md-6">
-                 <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua:</h5>
-   <ul>
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua:</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua:</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua:</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua:</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua:</li>
-
-   </ul>
-
+               <div class="col-md-5 col-xl-3">
+                  <img class="img-fluid w-100 mb-4" src="../assets/images/main-cover.png" alt="cover">
+                  <a class="edit-banner" href="#"><span class="fa fa-pencil"></span></a>
+               </div>
+               <div class="col-md-7 col-xl-6">
+                  <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                     eiusmod tempor incididunt ut labore et dolore magna aliqua:
+                  </h5>
+                  <ul>
+                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua:
+                     </li>
+                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua:
+                     </li>
+                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua:
+                     </li>
+                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua:
+                     </li>
+                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua:
+                     </li>
+                  </ul>
                </div>
             </div>
          </section>
@@ -133,9 +139,6 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua:</li>
             </div>
          </div>
       </div>
-
-
-
       <div class="modal fade" id="editInsurance" tabindex="-1" aria-labelledby="updateHospitalLabel" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
@@ -145,31 +148,29 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua:</li>
                   </button>
                   <h4 class="text-center">Edit Insurance Profile</h4>
                   <form>
-                        <h5>Banner</h5>
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Header Text">
-                           </div>
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Header Description">
-                           </div>
-                            <h5>Main Cover</h5>
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Main Cover Description">
-                           </div>
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Cover 1 Description">
-                           </div>
-                     
-                     
+                     <h5>Banner</h5>
+                     <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Header Text">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Header Description">
+                     </div>
+                     <h5>Main Cover</h5>
+                     <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Main Cover Description">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Cover 1 Description">
+                     </div>
                      <div class="form-group text-center mb-0">
-                        <button type="submit" class="btn btn-primary">Update</button>
+                        <button type="button" class="btn btn-outline-primary mx-1">+ Add More</button>
+                        <button type="submit" class="btn btn-primary mx-1">Update</button>
                      </div>
                   </form>
                </div>
             </div>
          </div>
       </div>
-
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="../assets/js/jquery-3.5.1.js"></script>
       <script src="../assets/js/popper.min.js"></script>

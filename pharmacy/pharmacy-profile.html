@@ -28,11 +28,11 @@
                <span class="icon-search"></span>
             </form>
             <ul class="sidebar-nav">
-               <li class="active">
-                  <a href="insurance-profile.html"><span class="icon-insurance"></span> Insurance Profile</a>
+               <li>
+                  <a href="branch.html"><span class="icon-hospital"></span> Branch</a>
                </li>
                <li>
-                  <a href="leads.html"><span class="icon-leads"></span> Leads</a>
+                  <a href="javascript:void(0)"><span class="icon-qr-code"></span> Scan QR Prescription</a>
                </li>
             </ul>
          </aside>
@@ -61,73 +61,71 @@
                   </ul>
                </nav>
             </header>
-            <div class="row align-items-start add-list hospital-info">
-               <div class="col-12 text-right">
-                  <a href="javascript:void(0)" class="btn btn-primary px-4">Save</a>
+            <div class="row nav-tab-link">
+               <div class="col-md-12">
+                  <ul class="nav justify-content-center">
+                     <li class="nav-item">
+                        <a class="nav-link active" href="#">Account</a>
+                     </li>
+                  </ul>
                </div>
             </div>
-            <div class="row mt-2">
-               <div class="col-12">
-                  <h4>Banner</h4>
-               </div>
-               <div class="col-md-5">
-                  <div class="upload-file">
-                     <span class="icon-upload"></span>
-                     <p>Upload New Image</p>
+            <div class="row patient-profile">
+               <div class="col-md-3 col-lg-3 col-xl-2">
+                  <div class="profile-image">
+                     <img src="../assets/images/patient.png" alt="patient">
+                     <a href="#"><span class="fa fa-pencil"></span></a>
                   </div>
                </div>
-               <div class="col-md-6">
+               <div class="col-md-9 col-lg-9 col-xl-8">
+                  <h4 class="mb-3">Pharmacy Details</h4>
                   <form>
                      <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-sm-6">
                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Header Text">
+                              <input type="text" class="form-control" placeholder="Hospital Name">
                            </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-sm-6">
                            <div class="form-group">
-                              <textarea class="form-control" placeholder="Description" rows="3"></textarea>
+                              <input type="text" class="form-control" placeholder="Trade License Number">
                            </div>
                         </div>
                      </div>
-                  </form>
-               </div>
-            </div>
-            <div class="row mt-4">
-               <div class="col-12">
-                  <h4>Main Cover</h4>
-               </div>
-               <div class="col-md-3">
-                  <div class="upload-file">
-                     <span class="icon-upload"></span>
-                     <p>Upload New Image</p>
-                  </div>
-               </div>
-               <div class="col-md-8">
-                  <form>
                      <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-sm-6">
+                           <div class="form-group position-relative">
+                              <input type="file" class="form-control custom-file-input" id="validatedCustomFile">
+                              <label class="custom-file-label form-control" for="validatedCustomFile">Upload Trade License</label>
+                           </div>
+                        </div>
+                     </div>
+                     <h4 class="mb-3 mt-3">Contact Details</h4>
+                     <div class="row">
+                        <div class="col-sm-6">
                            <div class="form-group">
-                              <textarea class="form-control" placeholder="Description" rows="4"></textarea>
+                              <input type="text" class="form-control" placeholder="Email">
                            </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-sm-6">
                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Cover">
+                              <input type="text" class="form-control" placeholder="Mobile">
                            </div>
                         </div>
-                        <div class="col-md-12">
-                           <div class="form-group text-center mt-2">
-                              <button type="button" class="btn btn-outline-primary">+ Add More</button>
+                        <div class="col-sm-6">
+                           <div class="form-group">
+                              <input type="Password" class="form-control" placeholder="Change Password">
                            </div>
                         </div>
+                     </div>
+                     <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary mt-2">Update</button>
                      </div>
                   </form>
                </div>
             </div>
          </section>
       </div>
-      <!-- Update Hospital -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="../assets/js/jquery-3.5.1.js"></script>
       <script src="../assets/js/popper.min.js"></script>

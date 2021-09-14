@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Favicon -->
+      <link href="../assets/images/favicon.png" sizes="60x60" rel="shortcut icon" type="image/x-icon" />
+      <!-- Font Awsome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../assets/css/style.css">
+      <title>MedicApp</title>
+   </head>
+   <body>
+      <div id="wrapper">
+         <!-- Sidebar -->
+         <aside id="sidebar-wrapper" class="scrollbar">
+            <a href="javascript:void(0)" class="d-lg-none" ><i id="close" class="icon-close"></i></a>
+            <div class="text-center logo">
+               <a href="javascript:void(0)">
+               <img src="../assets/images/logo.png" alt="logo">
+               </a>
+            </div>
+            <form class="form-inline search-form d-lg-none">
+               <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+               <span class="icon-search"></span>
+            </form>
+            <ul class="sidebar-nav">
+               <li>
+                  <a href="branch.html"><span class="icon-hospital"></span> Branch</a>
+               </li>
+               <li>
+                  <a href="javascript:void(0)"><span class="icon-qr-code"></span> Scan QR Prescription</a>
+               </li>
+            </ul>
+         </aside>
+         <!-- Main Content -->
+         <section id="content-wrapper" class="user-dashboard">
+            <!-- Header -->
+            <header>
+               <nav class="navbar navbar-expand-lg navbar-light">
+                  <a href="javascript:void(0)" class="d-lg-none" id="sidebar-toggle"><i class="fa fa-bars"></i></a>
+                  <form class="form-inline search-form d-none d-lg-block">
+                     <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                     <span class="icon-search"></span>
+                  </form>
+                  <ul class="navbar-nav ml-auto align-items-center">
+                     <li class="nav-item">
+                        <div class="dropdown">
+                           <a href="javascript:void(0)" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <span class="icon-user"></span> User
+                           </a>
+                           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Setting</a>
+                              <a class="dropdown-item" href="#">Logout</a>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </nav>
+            </header>
+            <div class="row align-items-center add-list">
+               <div class="col-12">
+                  <h4>Branch</h4>
+               </div>
+            </div>
+            <div class="row list-block">
+               <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                  <div class="card">
+                     <div class="card-body pb-4">
+                        <div class="media">
+                           <img src="../assets/images/doctor.png" alt="doctor">
+                           <div class="media-body">
+                              <h5 class="mt-0">Life Pharmacy</h5>
+                              <p>Deira,Dubai</p>
+                           </div>
+                        </div>
+                        <div class="contact-info">
+                           <button type="button" data-toggle="modal" data-target="#editProfile" class="btn btn-primary mt-3 px-4 py-2">Edit Profile</button>
+                        </div>
+                     </div>
+                     <div class="dropdown">
+                        <a href="javascript:void(0)" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-dots"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item delete-item" href="#">Delete</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                  <div class="card">
+                     <div class="card-body pb-4">
+                        <div class="media">
+                           <img src="../assets/images/doctor.png" alt="doctor">
+                           <div class="media-body">
+                              <h5 class="mt-0">Life Pharmacy</h5>
+                              <p>Deira,Dubai</p>
+                           </div>
+                        </div>
+                        <div class="contact-info">
+                           <button type="button" class="btn btn-primary mt-3 px-4 py-2">Edit Profile</button>
+                        </div>
+                     </div>
+                     <div class="dropdown">
+                        <a href="javascript:void(0)" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-dots"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item delete-item" href="#">Delete</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                  <div class="card">
+                     <div class="card-body pb-4">
+                        <div class="media">
+                           <img src="../assets/images/doctor.png" alt="doctor">
+                           <div class="media-body">
+                              <h5 class="mt-0">Life Pharmacy</h5>
+                              <p>Deira,Dubai</p>
+                           </div>
+                        </div>
+                        <div class="contact-info">
+                           <button type="button" class="btn btn-primary mt-3 px-4 py-2">Edit Profile</button>
+                        </div>
+                     </div>
+                     <div class="dropdown">
+                        <a href="javascript:void(0)" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-dots"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item delete-item" href="#">Delete</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                  <div class="card add-branch">
+                     <div class="card-body">
+                        <a href="#" data-toggle="modal" data-target="#addProfile"><span class="icon-plus"></span></a>
+                        <p class="mt-3">Add Branch</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <nav>
+                     <ul class="pagination justify-content-center align-items-center my-md-2">
+                        <li class="page-item"><a href="#">Prev</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a href="#">Next</a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </section>
+      </div>
+      <!-- Add Profile -->
+      <div class="modal fade" id="addProfile" tabindex="-1" aria-labelledby="addProfileLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span class="icon-close"></span>
+                  </button>
+                  <h4 class="text-center">Add Branch</h4>
+                  <form>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Location">
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Mobile">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <textarea class="form-control" rows="3" placeholder="About Pharmacy"></textarea>
+                     </div>
+                     <div class="form-group text-center mb-0">
+                        <button type="submit" class="btn btn-primary">Confirm</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Edit Profile -->
+      <div class="modal fade" id="editProfile" tabindex="-1" aria-labelledby="editProfileLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span class="icon-close"></span>
+                  </button>
+                  <small>Date</small>
+                  <h5 class="mb-3"><strong>20 Aug 2021</strong></h5>
+                  <div class="row">
+                     <div class="col-6 col-sm-4 mb-3">
+                        <h6><strong>Prescription</strong></h6>
+                        <ul>
+                           <li>Medicine</li>
+                           <li>Medicine</li>
+                           <li>Medicine</li>
+                           <li>Medicine</li>
+                        </ul>
+                     </div>
+                     <div class="col-6 col-sm-4 mb-3">
+                        <h6><strong>Dosage</strong></h6>
+                        <ul>
+                           <li>2 x a day</li>
+                           <li>2 x a day</li>
+                           <li>2 x a day</li>
+                           <li>2 x a day</li>
+                        </ul>
+                     </div>
+                     <div class="col-6 col-sm-4 mb-3">
+                        <h6><strong>Days</strong></h6>
+                        <ul>
+                           <li>10 days</li>
+                           <li>10 days</li>
+                           <li>10 days</li>
+                           <li>10 days</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="row mt-4">
+                     <div class="col-12 col-sm-6">
+                        <div class="media">
+                           <img class="avatar-sm" src="../assets/images/doctor.png" alt="doctor">
+                           <div class="media-body">
+                              <h5 class="mt-0 mb-0">Dr. Travis Martin</h5>
+                              <p>Dentist</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-12 col-sm-6">
+                        <div class="media">
+                           <img class="avatar-sm" src="../assets/images/doctor.png" alt="doctor">
+                           <div class="media-body">
+                              <h5 class="mt-0 mb-0">Dr. Travis Martin</h5>
+                              <p>Dentist</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-12 text-center mt-4">
+                        <button type="submit" class="btn btn-primary">Confirm</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="../assets/js/jquery-3.5.1.js"></script>
+      <script src="../assets/js/popper.min.js"></script>
+      <script src="../assets/js/bootstrap.min.js"></script>
+      <script>
+         const $button  = document.querySelector('#sidebar-toggle');
+         const $wrapper = document.querySelector('#wrapper');
+         
+         $button.addEventListener('click', (e) => {
+          e.preventDefault();
+          $wrapper.classList.toggle('toggled');
+         });
+      </script>
+      <script>
+         $(document).ready(function(){
+          $("#close").click(function(){
+           $("#wrapper").removeClass('toggled');
+         });
+         });
+      </script>
+   </body>
+</html>

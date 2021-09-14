@@ -12,6 +12,11 @@
       <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
       <link rel="stylesheet" href="../assets/css/style.css">
       <title>MedicApp</title>
+      <style>
+         .map-bg {
+         background-image: url(../assets/images/map.png);
+         }
+      </style>
    </head>
    <body>
       <div id="wrapper">
@@ -28,11 +33,11 @@
                <span class="icon-search"></span>
             </form>
             <ul class="sidebar-nav">
-               <li class="active">
-                  <a href="insurance-profile.html"><span class="icon-insurance"></span> Insurance Profile</a>
+               <li>
+                  <a href="branch.html"><span class="icon-hospital"></span> Branch</a>
                </li>
                <li>
-                  <a href="leads.html"><span class="icon-leads"></span> Leads</a>
+                  <a href="javascript:void(0)"><span class="icon-qr-code"></span> Scan QR Prescription</a>
                </li>
             </ul>
          </aside>
@@ -62,72 +67,64 @@
                </nav>
             </header>
             <div class="row align-items-start add-list hospital-info">
-               <div class="col-12 text-right">
-                  <a href="javascript:void(0)" class="btn btn-primary px-4">Save</a>
+               <div class="col-6">
+                  <h4>Branch</h4>
                </div>
-            </div>
-            <div class="row mt-2">
-               <div class="col-12">
-                  <h4>Banner</h4>
-               </div>
-               <div class="col-md-5">
-                  <div class="upload-file">
-                     <span class="icon-upload"></span>
-                     <p>Upload New Image</p>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <form>
-                     <div class="row">
-                        <div class="col-md-8">
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Header Text">
-                           </div>
-                        </div>
-                        <div class="col-md-12">
-                           <div class="form-group">
-                              <textarea class="form-control" placeholder="Description" rows="3"></textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </form>
+               <div class="col-6 text-right">
+                  <a href="javascript:void(0)" data-toggle="modal" data-target="#editBranch" class="btn btn-primary px-5">Edit</a>
                </div>
             </div>
             <div class="row mt-4">
-               <div class="col-12">
-                  <h4>Main Cover</h4>
-               </div>
-               <div class="col-md-3">
-                  <div class="upload-file">
-                     <span class="icon-upload"></span>
-                     <p>Upload New Image</p>
+               <div class="col-md-4">
+                  <div class="card brand-logo h-100">
+                     <div class="card-body text-center">
+                        <img class="img-fluid" src="../assets/images/pharmacy.png" alt="pharmacy.png">
+                     </div>
                   </div>
                </div>
-               <div class="col-md-8">
-                  <form>
-                     <div class="row">
-                        <div class="col-md-12">
-                           <div class="form-group">
-                              <textarea class="form-control" placeholder="Description" rows="4"></textarea>
-                           </div>
-                        </div>
-                        <div class="col-md-12">
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Cover">
-                           </div>
-                        </div>
-                        <div class="col-md-12">
-                           <div class="form-group text-center mt-2">
-                              <button type="button" class="btn btn-outline-primary">+ Add More</button>
-                           </div>
-                        </div>
-                     </div>
-                  </form>
+               <div class="col-md-7 mt-4 mt-md-0">
+                  <h4 class="mb-0"><strong>Life Pharmacy</strong></h4>
+                  <p class="mt-2 mb-2"><i class="icon-map"></i> Dubai, United Arab Emirates</p>
+                  <p class="mt-2 mb-2"><i class="icon-phone"></i> +971 4 1234567</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <div class="map-bg mb-0">
+                     <button type="button" class="btn btn-primary px-4">UPDATE MAP LOCATION</button>
+                  </div>
                </div>
             </div>
          </section>
       </div>
-      <!-- Update Hospital -->
+      <!-- Edit Brandh -->
+      <div class="modal fade" id="editBranch" tabindex="-1" aria-labelledby="editBranchLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span class="icon-close"></span>
+                  </button>
+                  <h4 class="text-center">Edit Branch</h4>
+                  <form>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Mobile">
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <div class="form-group">
+                              <textarea class="form-control" rows="5" placeholder="About Pharmacy"></textarea>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group text-center mb-0">
+                        <button type="submit" class="btn btn-primary">Confirm</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="../assets/js/jquery-3.5.1.js"></script>
       <script src="../assets/js/popper.min.js"></script>
