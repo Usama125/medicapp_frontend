@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Favicon -->
+      <link href="../assets/images/favicon.png" sizes="60x60" rel="shortcut icon" type="image/x-icon" />
+      <!-- Font Awsome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../assets/css/style.css">
+      <title>MedicApp</title>
+   </head>
+   <body class="bg-sky">
+      <!-- Header -->
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-light navabr-home mb-0">
+            <div class="container">
+               <a class="navbar-brand" href="#"><img src="../assets/images/logo.png" alt="logo"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="javascript:void(0)">Hospital</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Doctor</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Pharmacy</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Insurance</a>
+                     </li>
+                       <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><i class="icon-user"></i> User</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <!-- Nav -->
+
+      <section class="nav-tab-section">
+      <div class="container-fluid">
+      <div class="row nav-tab-link">
+               <div class="col-md-12">
+                    <ul class="nav justify-content-center">
+                       <li class="nav-item">
+                          <a class="nav-link active" href="medical-profile.html">Medical Profile</a>
+                       </li>
+                          <li class="nav-item">
+                          <a class="nav-link" href="appointments.html">Appointments</a>
+                       </li>
+                          <li class="nav-item">
+                          <a class="nav-link" href="qr-prescription.html">QR Prescription</a>
+                       </li>
+                          <li class="nav-item">
+                          <a class="nav-link" href="lab-results.html">Lab Results</a>
+                       </li>
+
+                       <li class="nav-item">
+                          <a class="nav-link" href="account.html">Account</a>
+                       </li>
+                    </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+         <!-- Main Content -->
+         <section class="user-dashboard patient-account">
+            <div class="container">
+               <div class="row align-items-center add-list">
+            <div class="col-12">
+               <h4>Current Medical Record</h4>
+            </div>
+         </div>
+
+         <div class="row pb-5">
+            <div class="col-md-4">
+               <div class="card profile-detail py-3">
+                  <div class="card-body">
+                     <div class="media">
+                        <img class="avatar-lg mr-0" src="../assets/images/patient.png" alt="patient">
+                        <div class="media-body">
+                           <h5 class="mt-3 mb-2">Anthony Miles</h5>
+                           <h6>Age: 36</h6>
+                           <a href="javascript:void(0)" data-toggle="modal" data-target="#updateInformation" class="btn btn-primary px-3 py-1">Update</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card patient-detail">
+                  <div class="card-body">
+                     <h5>Information:</h5>
+                     <ul>
+                        <li>
+                           <span>Gender:</span> Male
+                        </li>
+                        <li>
+                           <span>Blood Type:</span> 0+ (Positive)
+                        </li>
+                        <li>
+                           <span>Allergies:</span> Milk, Penicilin
+                        </li>
+                        <li>
+                           <span>Diseases:</span> Diabetes, Blood Disorders
+                        </li>
+                        <li>
+                           <span>Height:</span> 1.78m
+                        </li>
+                        <li>
+                           <span>Weight:</span> 65kg
+                        </li>
+                        <li>
+                           <span>Patient ID:</span> 456767
+                        </li>
+                        <li>
+                           <span>Last Visit:</span> 10 Aug 2021
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-8">
+               <div class="row heart-rate">
+                  <div class="col-sm-4 col-md-4">
+                     <div class="card">
+                        <div class="card-body">
+                           <img class="my-2" src="../assets/images/heart.png" alt="heart">
+                           <p>Heart Rate</p>
+                           <h4>80bpm</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                     <div class="card">
+                        <div class="card-body">
+                           <img src="../assets/images/temp.png" alt="temp">
+                           <p>Body Temperature</p>
+                           <h4>35.6 <sup>o</sup>c</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                     <div class="card">
+                        <div class="card-body">
+                           <img src="../assets/images/glucose.png" alt="glucose">
+                           <p>Glucose</p>
+                           <h4>100 <span>mg/dl</span></h4>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="card lab-result">
+                     <div class="card-body">
+                      <h5>Upcoming Appointment</h5>
+                        <div class="row align-items-center">
+                           <div class="col-md-12 col-lg-8 pr-0">
+                              <ul>
+                                 <li>
+                                    <small class="d-block">Date &amp; Time</small>
+                                    10 March 2021
+                                 </li>
+                                 <li class="media">
+                                    <img class="avatar-sm" src="../assets/images/doctor.png" alt="doctor">
+                                    <div class="media-body">
+                                       <h5 class="mt-0 mb-1">Dr. Travis Martin</h5>
+                                       <p>Dentist</p>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <small class="d-block">Hospital</small>
+                                    NMC Hospital
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="col-md-12 col-lg-4 text-center text-md-right mt-3 mt-md-0">
+                              <span class="contact-info mr-3">
+                              <a class="mt-0" href="javascript:void(0)"><span class="fa fa-map"></span></a>
+                              <a class="mt-0" href="javascript:void(0)"><span class="icon-phone"></span></a>
+                              </span>
+                              <a href="javascript:void(0)" class="btn btn-danger px-3">CANCEL</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12 col-lg-6 pr-lg-1">
+                     <div class="card lab-results">
+                        <div class="card-body">
+                           <h5 class="mb-0">Lab Results</h5>
+                           <div class="row">
+                              <div class="col-sm-12 col-md-6">
+                                 <div class="media">
+                                    <span> <img src="../assets/images/lab.png" alt="lab"></span>
+                                    <div class="media-body">
+                                       <h5>Blood Test</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-12 col-md-6">
+                                 <div class="media">
+                                    <span> <img src="../assets/images/lab.png" alt="lab"></span>
+                                    <div class="media-body">
+                                       <h5>Body CT-Scan</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-12 col-md-6">
+                                 <div class="media">
+                                    <span> <img src="../assets/images/lab.png" alt="lab"></span>
+                                    <div class="media-body">
+                                       <h5>Body CT-Scan</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-12 col-md-6">
+                                 <div class="media">
+                                    <span> <img src="../assets/images/lab.png" alt="lab"></span>
+                                    <div class="media-body">
+                                       <h5>Fasting Blood Sugar</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-12 col-md-6">
+                                 <div class="media">
+                                    <span> <img src="../assets/images/lab.png" alt="lab"></span>
+                                    <div class="media-body">
+                                       <h5>CBC</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-12 col-md-6">
+                                 <div class="media">
+                                    <span> <img src="../assets/images/lab.png" alt="lab"></span>
+                                    <div class="media-body">
+                                       <h5>CBC</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                 </div>
+                              </div>
+                            
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-12 col-lg-6">
+                     <div class="card lab-results pb-1">
+                        <div class="card-body pb-4">
+                           <h5 class="mb-0">QR Prescriprion</h5>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <div class="media">
+                                    <span class="bg-danger"> <img src="../assets/images/view-qr.png" alt="view-qr"></span>
+                                    <div class="media-body">
+                                       <h5>Blood Test</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="btn btn-primary px-3 py-1">View</a>
+                                 </div>
+                              </div>
+                                <div class="col-md-12">
+                                 <div class="media">
+                                    <span class="bg-danger"> <img src="../assets/images/view-qr.png" alt="view-qr"></span>
+                                    <div class="media-body">
+                                       <h5>Blood Test</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="btn btn-primary px-3 py-1">View</a>
+                                 </div>
+                              </div>
+                                <div class="col-md-12">
+                                 <div class="media">
+                                    <span class="bg-danger"> <img src="../assets/images/view-qr.png" alt="view-qr"></span>
+                                    <div class="media-body">
+                                       <h5>Blood Test</h5>
+                                       <p>20 August 2021</p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="btn btn-primary px-3 py-1">View</a>
+                                 </div>
+                              </div>
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </div>
+         </div>
+         </section>
+  
+         <!-- Footer -->
+         <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                  <img class="img-fluid mb-4" src="../assets/images/footer-logo.png" alt="logo">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                  <div class="media align-items-center mb-3">
+                     <i class="icon-phone mr-3"></i>
+                     <div class="media-body">
+                        <p class="mb-0">+971 561 512 221 <br />
+                           info@abc.com
+                        </p>
+                     </div>
+                  </div>
+                  <div class="media align-items-center">
+                     <i class="icon-map mr-3"></i>
+                     <div class="media-body">
+                        <p class="mb-0">Dubai
+                           <br />
+                           United Arab Emirates
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-md-8 col-lg-7 offset-lg-1 col-xl-6 offset-xl-2 mt-md-5 pt-3 pt-md-5">
+                  <div class="row">
+                     <div class="col-sm-6 col-md-3">
+                        <h4>Menu</h4>
+                        <ul>
+                           <li>
+                              <a href="javascript:void(0)">Hospital</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Pharmacy</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Insurance</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-sm-6 col-md-3">
+                        <h4>Learn More</h4>
+                        <ul>
+                           <li>
+                              <a href="javascript:void(0)">Contact Us</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">FAQs</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Responsibility Hub</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Blog</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-sm-6 col-md-3">
+                        <h4>Careers</h4>
+                        <ul>
+                           <li>
+                              <a href="javascript:void(0)">Work with us</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Culture</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Vacancies</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-sm-6 col-md-3">
+                        <h4>Legal</h4>
+                        <ul>
+                           <li>
+                              <a href="javascript:void(0)">Terms & Conditions</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Cookies Policy</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Privacy</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Regulatory</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-12 text-center text-md-right mt-4 pr-4">
+                        <a class="mx-2" href="javascript:void(0)"><i class="fa fa-facebook"></i></a>
+                        <a class="mx-2" href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
+                        <a class="mx-2" href="javascript:void(0)"><i class="fa fa-instagram"></i></a>
+                        <a class="mx-2" href="javascript:void(0)"><i class="fa fa-linkedin"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+
+      <!-- Update Information -->
+      <div class="modal fade" id="updateInformation" tabindex="-1" aria-labelledby="updateInformationLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span class="icon-close"></span>
+                  </button>
+                  <h4 class="text-center">Update Information</h4>
+                  <form>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Blood Type">
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Height">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <select class="form-control">
+                                 <option>Allergies</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                         <div class="form-group">
+                              <select class="form-control">
+                                 <option>Weight</option>
+                              </select>
+                           </div>
+                        </div>
+                      
+                     </div>
+                     <div class="row align-items-center">
+                      
+                        <div class="col-md-6">
+                           <div class="form-group mb-0">
+                              <select class="form-control">
+                                 <option>Diseases</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                              <div class="form-group text-right mb-0">
+                        <button type="submit" class="btn btn-primary">Confirm</button>
+                     </div>
+                        </div>
+                     </div>
+                  
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="../assets/js/jquery-3.5.1.js"></script>
+      <script src="../assets/js/popper.min.js"></script>
+      <script src="../assets/js/bootstrap.min.js"></script>
+      <script>
+         const $button  = document.querySelector('#sidebar-toggle');
+         const $wrapper = document.querySelector('#wrapper');
+         
+         $button.addEventListener('click', (e) => {
+          e.preventDefault();
+          $wrapper.classList.toggle('toggled');
+         });
+      </script>
+      <script>
+         $(document).ready(function(){
+          $("#close").click(function(){
+           $("#wrapper").removeClass('toggled');
+         });
+         });
+      </script>
+   </body>
+</html>
